@@ -170,13 +170,6 @@ about {
   background-color: #f4f4f4;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 20px;
-}
 
 .about-image {
   width: 150px;
