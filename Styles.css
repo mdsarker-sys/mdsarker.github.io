@@ -190,32 +190,6 @@ about {
   flex-grow: 1;
 }
 
-/* About Me section styles */
-.about-content {
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
-    font-family: 'Futura', sans-serif; /* Futuristic font */
-    position: relative; /* For any absolute positioned children */
-}
-
-.about-content h2 {
-    font-family: 'Playfair Display', serif; /* Classy font for title */
-    border-bottom: 2px solid #e0e0e0;
-    display: inline-block;
-}
-
-.about-content p {
-    line-height: 1.7; /* Improved readability */
-    font-size: 18px;
-}
-
-/* Hover effect for text */
-.about-content p:hover {
-    color: #00ffdd; /* Neon color on hover */
-    transition: color 0.5s; /* Smooth transition */
-}
-
-
 
 
                                               /*Contact
