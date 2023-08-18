@@ -1,7 +1,26 @@
 * {
   box-sizing: border-box;
 }
+.cta-button {
+  display: inline-block;
+  padding: 16px 24px;
+  background-color: #333; /* Adjust to your preferred color */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
 
+.cta-button:hover {
+  background-color: #555; /* Adjust to your preferred hover color */
+}
+
+         /* Experience*/
+ 
 
 .experience-section h1 {
   font-size: 5rem;  /* Adjusting font size to make it bigger */
@@ -10,7 +29,7 @@
 }
 
 .experience-section p {
-  font-size: 2rem; /* Increasing the font size for the tagline to keep proportion */
+  font-size: 1rem; /* Increasing the font size for the tagline to keep proportion */
   margin-bottom: 10px;  /* Adding more space between the tagline and "Professional Experience" */
 }
 
@@ -74,7 +93,7 @@
 
 
 
-/* ... (Rest of your CSS) ... */
+
                                       /*BODY
 
 
@@ -165,11 +184,18 @@
 
 
                                           /* About section styles */
-about {
+#about {
   padding: 50px 0;
   background-color: #f4f4f4;
 }
 
+.about-content {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
 
 .about-image {
   width: 150px;
@@ -182,7 +208,6 @@ about {
 .about-text {
   flex-grow: 1;
 }
-
 
 
                                               /*Contact
@@ -326,23 +351,11 @@ about {
   text-align: left;
 }
 
-/* Add background animation */
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 .experience-section {
   background: linear-gradient(270deg, #ff7a18, #af002d, #319197, #5e3f6b);
   background-size: 600% 600%;
-  animation: gradientBG 30s ease infinite;
+  animation: gradientBG 10s ease infinite;
   color: white;
   padding: 100px 0;
   text-align: center;
@@ -382,3 +395,62 @@ h4 {
   border-radius: 5px;
   transition: width 1.5s ease-in-out;
 }
+
+
+
+
+.experience-container {
+  perspective: 1000px; /* This will give a 3D perspective effect */
+  overflow: hidden;    /* Prevents children from overflowing */
+}
+
+.experience-item {
+  transform: scale(1);          /* Start at normal size */
+  transition: transform 0.3s;  /* Smooth transition */
+}
+
+.experience-item:hover {
+  transform: scale(0.95);      /* Reduce size to 95% on hover */
+}
+
+
+.experience-item:hover {
+  transform: scale(0.95) rotateX(5deg);
+}
+
+
+.experience-item h3 {
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition for the transform and font-size properties */
+}
+
+.experience-item:hover h3 {
+  transform: translateY(-10px); /* Move the title up by 10 pixels */
+  font-size: 1.2em; /* Increase the font size */
+}
+
+/* Style for the list block */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove padding */
+  transition: all 0.3s ease; /* Smooth transition for hover effect and text size */
+  font-size: 16px; /* Default font size */
+}
+
+ul li {
+  position: relative;
+  padding-left: 30px; /* Space for custom bullet */
+}
+
+ul li:before {
+  content: '✔'; /* Using checkmark as custom bullet */
+  position: absolute;
+  left: 0;
+  color: #4CAF50; /* Change color as desired */
+}
+
+/* Hover effect */
+ul:hover {
+  background-color: #f5f5f5; /* Background color change on hover */
+  font-size: 20px; /* Increase font size when hovered */
+}
+
