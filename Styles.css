@@ -441,12 +441,7 @@ ul li {
   padding-left: 30px; /* Space for custom bullet */
 }
 
-ul li:before {
-  content: '✔'; /* Using checkmark as custom bullet */
-  position: absolute;
-  left: 0;
-  color: #4CAF50; /* Change color as desired */
-}
+
 
 /* Hover effect */
 ul:hover {
